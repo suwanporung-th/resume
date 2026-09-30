@@ -1,0 +1,149 @@
+:root {
+  --bg: #eef1f4;
+  --paper: #ffffff;
+  --ink: #1b2430;
+  --muted: #5b6878;
+  --line: #dde3ea;
+  --accent: #0f5c73;
+  --accent-soft: #e6f1f4;
+  --shadow: 0 1px 2px rgb(16 24 40 / 6%), 0 8px 24px rgb(16 24 40 / 6%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f141a;
+    --paper: #161d25;
+    --ink: #e4e9ef;
+    --muted: #9aa7b6;
+    --line: #26313d;
+    --accent: #6cc3da;
+    --accent-soft: #1b2f38;
+    --shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.55 "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.toolbar {
+  max-width: 860px;
+  margin: 24px auto 12px;
+  padding: 0 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.switcher { display: flex; gap: 6px; flex-wrap: wrap; margin-right: auto; }
+.switcher a {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.switcher a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+.print {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.print:hover { background: var(--accent-soft); }
+
+.sheet {
+  max-width: 860px;
+  margin: 0 auto 48px;
+  padding: 48px 56px;
+  background: var(--paper);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.top { border-bottom: 2px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
+h1 { margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
+.headline { margin: 2px 0 10px; font-size: 17px; font-weight: 500; color: var(--accent); }
+.contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: 14px; }
+
+section { margin-top: 22px; }
+h2 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+section > p { margin: 0; }
+
+.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.chips li { background: var(--accent-soft); padding: 3px 10px; border-radius: 4px; font-size: 13.5px; }
+
+.job + .job { margin-top: 18px; }
+.job-head h3 { margin: 0; font-size: 16.5px; font-weight: 600; }
+.job-head .org { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+.role { margin-top: 10px; padding-left: 14px; border-left: 2px solid var(--line); }
+.role-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.role-head h4 { margin: 0; font-size: 15px; font-weight: 600; }
+.period { color: var(--muted); font-size: 13.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.role ul { margin: 4px 0 0; padding-left: 18px; }
+.role li { margin: 2px 0; }
+.portfolio p { margin: 4px 0 0; }
+
+.plain { list-style: none; margin: 0; padding: 0; }
+.plain li { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 3px 0; }
+
+@media (max-width: 640px) {
+  body { font-size: 14.5px; }
+  .toolbar { margin-top: 12px; }
+  .sheet { padding: 28px 18px; border-radius: 0; margin-bottom: 0; }
+  h1 { font-size: 25px; }
+  .role { padding-left: 10px; }
+}
+
+/* พิมพ์ / บันทึกเป็น PDF: A4 ขาวดำอ่านง่าย ไม่มีปุ่ม */
+@media print {
+  @page { size: A4; margin: 14mm 14mm; }
+  :root {
+    --paper: #fff; --bg: #fff; --ink: #111; --muted: #444;
+    --line: #ccc; --accent: #0f5c73; --accent-soft: #eef4f6;
+  }
+  body { font-size: 10.5pt; background: #fff; }
+  .toolbar { display: none; }
+  .sheet { max-width: none; margin: 0; padding: 0; box-shadow: none; border-radius: 0; }
+  h1 { font-size: 20pt; }
+  section { margin-top: 12pt; }
+  .role, .plain li { break-inside: avoid; }
+  .job-head { break-after: avoid; }
+  .chips li { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* หน้ารวม */
+.hub { margin-top: 32px; }
+.hub-intro { margin: 0 0 16px; color: var(--muted); }
+.cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.card {
+  display: flex; flex-direction: column; gap: 8px; height: 100%;
+  padding: 18px; border: 1px solid var(--line); border-radius: 8px;
+  color: var(--ink); transition: border-color .15s, transform .15s;
+}
+.card:hover { text-decoration: none; border-color: var(--accent); transform: translateY(-2px); }
+.card-title { font-weight: 600; font-size: 16px; color: var(--accent); }
+.card-text { font-size: 14px; color: var(--muted); }
+.card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; }
+.card-tags span { background: var(--accent-soft); padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.card-cta { font-size: 13.5px; font-weight: 500; color: var(--accent); }
+@media (max-width: 640px) { .hub { margin-top: 0; } }

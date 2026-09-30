@@ -1,0 +1,10 @@
+{
+  "name": "resume",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && python3 -m http.server 4321 -d dist",
+    "deploy:cf": "node build.mjs && npx wrangler pages deploy dist --project-name peerapat-resume"
+  }
+}

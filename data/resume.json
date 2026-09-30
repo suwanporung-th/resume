@@ -1,0 +1,288 @@
+{
+  "hub": {
+    "headline": "Process · Test · Failure Analysis Engineering",
+    "intro": "15+ years in HDD read/write head manufacturing at Western Digital. Each version below highlights the experience most relevant to that role."
+  },
+  "showSwitcher": false,
+  "profile": {
+    "name": "Peerapat Suwanphorung",
+    "location": "Klong Sam, Klong Luang, Pathum Thani 12120",
+    "email": "Suwanphorung@gmail.com",
+    "phone": "08-5228-9361",
+    "phoneIntl": "+66852289361"
+  },
+  "variants": [
+    {
+      "slug": "senior-process-engineer",
+      "label": "Senior Process Engineer",
+      "headline": "Senior Process Engineer",
+      "sets": ["core"],
+      "summary": "Engineer with 15+ years in precision electronics component manufacturing (HDD read/write heads) in cleanroom production, applying process qualification, DOE and reliability-testing methods that carry directly into EMS/PCBA process engineering. Evaluates new processes and engineering changes through qualification builds and testing, reporting clear recommendations to process owners and management. Experienced in build instructions, cycle-time reduction and technician supervision.",
+      "competencies": [
+        "New-Process Validation & Qualification",
+        "Engineering Change Evaluation",
+        "DOE Test Planning & Data Analysis",
+        "Cycle-Time & Workflow Improvement",
+        "Reliability Testing (HAST, NaCl)",
+        "Root Cause & Failure Analysis",
+        "Cleanroom & ESD / Contamination Control",
+        "Build / Process Instructions",
+        "Management Reporting & Presentations",
+        "Team Supervision & Technician Training"
+      ],
+      "portfolio": true
+    },
+    {
+      "slug": "senior-test-engineer",
+      "label": "Senior Test Engineer",
+      "headline": "Senior Test Engineer",
+      "sets": ["test", "core"],
+      "summary": "Engineer with 15+ years in precision electronics component manufacturing (HDD read/write heads), including direct test-engineering experience planning DOE test execution and qualifying test equipment for new products. Evaluates new processes and engineering changes through qualification builds and reliability testing, feeding clear, data-driven recommendations to process owners and management.",
+      "competencies": [
+        "DOE Test Planning & Data Analysis",
+        "Test Equipment Qualification & Conversion",
+        "Reliability Testing (HAST, NaCl)",
+        "Root Cause & Failure Analysis",
+        "New-Process Validation & Qualification",
+        "Engineering Change Evaluation",
+        "Cycle-Time & Workflow Improvement",
+        "Cleanroom & ESD / Contamination Control",
+        "Management Reporting & Presentations",
+        "Team Supervision & Technician Training"
+      ],
+      "portfolio": true
+    },
+    {
+      "slug": "process-engineer",
+      "label": "Process Engineer",
+      "headline": "Process Engineer",
+      "sets": ["core"],
+      "summary": "Engineer with 15+ years in high-tech electronics manufacturing (hard disk drive heads) in cleanroom production. Evaluates new processes and engineering changes through qualification builds and reliability testing, reporting clear recommendations to process owners and management. Experienced in build instructions, cycle-time reduction and technician supervision.",
+      "competencies": [
+        "Engineering Change Evaluation",
+        "New-Process Validation & Qualification",
+        "Build / Process Instructions",
+        "Cycle-Time & Workflow Improvement",
+        "Root Cause & Failure Analysis",
+        "Reliability Testing (HAST, NaCl)",
+        "DOE Test Planning & Data Analysis",
+        "Management Reporting & Presentations",
+        "Cleanroom & ESD / Contamination Control",
+        "Team Supervision & Technician Training"
+      ],
+      "portfolio": true
+    },
+    {
+      "slug": "failure-analysis-engineer",
+      "label": "Failure Analysis Engineer",
+      "headline": "Failure Analysis Engineer",
+      "sets": ["fa", "core"],
+      "summary": "Computer Engineering graduate with 15+ years in electronics manufacturing (hard disk drive heads), including hands-on failure analysis of reliability-test failures and new-process builds. Traces root cause with electrical debug, SEM and stress-test data (HAST, NaCl), reports clear findings, and organizes technicians and lab priorities to meet turnaround.",
+      "competencies": [
+        "Failure Analysis & Root Cause",
+        "FA Reporting",
+        "Electrical Debug",
+        "Reliability & Stress Testing (HAST, NaCl)",
+        "Lab Coordination (SEM)",
+        "Technician Team Supervision",
+        "Test Equipment Readiness",
+        "Corrective & Preventive Action",
+        "Cleanroom & ESD Control",
+        "DOE & Data Analysis"
+      ],
+      "portfolio": true
+    },
+    {
+      "slug": "process-validation",
+      "label": "Process Validation & Quality",
+      "headline": "Senior Process Engineer | Process Validation & Quality Engineering",
+      "sets": ["pm", "core"],
+      "summary": "Engineering professional with 15+ years of experience in process validation, quality assurance, and project management within the hard disk drive manufacturing industry. Experienced in qualifying new manufacturing processes and driving root-cause investigations to resolution, with hands-on exposure to Design of Experiments (DOE) methodology during a prior test engineering tenure. Focused on driving continuous process improvements through data-driven decision-making.",
+      "competencies": [
+        "Process Validation & Qualification",
+        "Quality Assurance & Reliability Testing",
+        "Root Cause & Failure Analysis",
+        "Cross-Functional Project & Budget Management",
+        "Cleanroom & Contamination Control",
+        "DOE-Supported Process Characterization",
+        "Workflow Optimization & Cycle-Time Control",
+        "Technical Reporting & Stakeholder Presentations"
+      ],
+      "portfolio": false
+    }
+  ],
+  "portfolio": {
+    "name": "Slider Process Validation Dashboard",
+    "url": "https://validate.songvijit.com",
+    "urlLabel": "validate.songvijit.com",
+    "description": {
+      "core": "Evaluates a split-lot process change against POR from BQST/SDET results (mean shift, box plots vs. spec limits, paired tracking) and gives a pass / caution / fail recommendation.",
+      "fa": "Compares a split-lot process change against POR from BQST/SDET results; paired tracking flags units that pass one test stage but fail the next."
+    }
+  },
+  "experience": [
+    {
+      "company": "Western Digital (Thailand) Ltd.",
+      "location": "Bang Pa-In, Ayutthaya",
+      "title": "Staff Engineer",
+      "roles": [
+        {
+          "area": "Build Support & Workflow Optimization",
+          "period": "Nov 2025 – Feb 2026",
+          "bullets": {
+            "core": [
+              "Issued build instructions for every experimental build, sequenced around shared-tool slots and soak-time limits.",
+              "Traced cycle-time overruns to root causes and agreed fixes with production, process owners and IE.",
+              "Built schedules and tracked KPIs, helping cut cycle time 10% with production, process and equipment teams."
+            ],
+            "fa": [
+              "Traced build cycle-time overruns to root causes and agreed fixes with production and IE."
+            ],
+            "pm": [
+              "Led end-to-end planning and execution of 62 concurrent engineering projects, coordinating cross-functional teams to deliver project milestones on schedule.",
+              "Developed integrated project schedules, monitored KPIs, managed risks, and resolved bottlenecks, reducing critical project cycle time by 10%.",
+              "Collaborated with engineering, operations, quality, and equipment teams to align priorities, optimize resource allocation, and ensure successful project delivery.",
+              "Prepared executive project status reports, risk registers, and mitigation plans, providing timely updates to senior stakeholders.",
+              "Facilitated issue resolution and stakeholder alignment across multiple departments to maintain project timelines and business objectives."
+            ]
+          }
+        },
+        {
+          "area": "Process Development & Characterization",
+          "period": "Jan 2024 – Nov 2025",
+          "bullets": {
+            "core": [
+              "Supported characterization of next-generation HAMR technology and investigated failures in new processes.",
+              "Contributed pole-tip-recession (PTR) data to a material change that resolved a dimensional defect.",
+              "Presented experiment findings to engineering leadership to guide next steps.",
+              "Introduced a weekly lab-priority agreement for shared SEM requests, reducing mid-week priority changes."
+            ],
+            "fa": [
+              "Performed FA on new-process builds with issues, coordinating SEM lab work and summarizing findings.",
+              "Introduced a weekly lab-priority agreement for shared SEM requests, reducing mid-week priority changes.",
+              "Contributed pole-tip-recession (PTR) data to a material change that resolved a dimensional defect.",
+              "Presented experiment findings to engineering leadership to guide next steps."
+            ],
+            "pm": [
+              "Managed cross-functional development projects from planning through implementation, coordinating technical teams, project schedules, deliverables, and stakeholder communications.",
+              "Gathered business and engineering requirements, translating operational needs into project plans and technical solutions.",
+              "Managed a US$12K monthly operational budget, improving forecasting, procurement planning, and inventory management to support uninterrupted project execution.",
+              "Delivered data-driven presentations and recommendations to senior management, enabling informed business and technical decisions.",
+              "Coordinated weekly project governance meetings, tracked deliverables, managed risks, and ensured alignment among cross-functional stakeholders.",
+              "Led continuous improvement initiatives through root cause analysis and process optimization, improving operational performance and project outcomes.",
+              "Mentored engineers, developed standard operating procedures, and improved knowledge transfer across project teams."
+            ]
+          }
+        },
+        {
+          "area": "Process Validation",
+          "period": "Jan 2022 – Dec 2023",
+          "bullets": {
+            "core": [
+              "Coordinated roughly 10 new-process validation projects over two years, from build scheduling to test reporting.",
+              "Ran qualification builds and tests on new processes and changes, feeding results to process owners for release.",
+              "Interpreted BQST/SDET electrical results and reviewed HAST and NaCl reliability reports."
+            ],
+            "fa": [
+              "Supported second-level failure analysis (HAST, NaCl) to verify process integrity.",
+              "Interpreted BQST/SDET electrical results and reviewed HAST (humidity) and NaCl (salt-corrosion) reports.",
+              "Ran qualification builds and tests on roughly 10 new-process projects, feeding results to process owners."
+            ],
+            "pm": [
+              "Managed validation projects for new manufacturing processes from planning through deployment, ensuring compliance with quality, operational, and business requirements.",
+              "Coordinated project timelines, testing activities, resource planning, and stakeholder communications across multiple functional teams.",
+              "Successfully delivered 10+ engineering implementation projects on schedule through proactive risk management and cross-functional collaboration.",
+              "Improved manufacturing performance by validating new process configurations and implementing data-driven process improvements.",
+              "Partnered with engineering, operations, and quality teams to resolve implementation issues and ensure smooth project execution."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "company": "Western Digital (Thailand) Ltd.",
+      "location": "Bang Pa-In, Ayutthaya",
+      "title": "Senior Engineer / Supervisor",
+      "roles": [
+        {
+          "area": { "core": "Cleanliness & Electrostatic Control", "pm": "Operations & Compliance" },
+          "period": "May 2019 – Dec 2021",
+          "bullets": {
+            "core": [
+              "Monitored contamination in two cleanroom buildings, directing corrective action through three technician teams.",
+              "Worked with industrial engineering on lasting tool fixes (door openings, robot paths, monitoring-probe locations).",
+              "Followed ESD control procedures set by the team's ESD specialist to protect sensitive head components.",
+              "Supervised 20+ personnel: shift planning, leave and overtime approval, Kaizen activities.",
+              "Part of the team managing two cleanroom shutdown-and-restart cycles, with no major issues at restart."
+            ],
+            "fa": [
+              "Monitored contamination in two cleanroom buildings, directing corrective action through three technician teams.",
+              "Worked with industrial engineering on lasting tool fixes (door openings, robot paths, monitoring-probe locations).",
+              "Followed ESD control procedures set by the team's ESD specialist to protect sensitive head components.",
+              "Supervised 20+ personnel: shift planning, leave and overtime approval, Kaizen activities."
+            ],
+            "pm": [
+              "Led day-to-day operations across two critical manufacturing facilities, managing workforce planning, operational performance, and compliance.",
+              "Supervised a team of 20+ personnel, coordinating priorities, workload distribution, and continuous improvement initiatives.",
+              "Managed two large-scale operational shutdown and restart projects, delivering all milestones on schedule with zero operational disruption.",
+              "Collaborated with cross-functional stakeholders to resolve operational issues, improve process stability, and enhance production performance.",
+              "Monitored post-implementation performance of new production lines, coordinating issue resolution and continuous improvement activities."
+            ]
+          }
+        },
+        {
+          "area": "Test Engineering",
+          "period": "Jun 2013 – Apr 2019",
+          "bullets": {
+            "core": [
+              "Planned DOE test execution on GUZIK head testers, converting testers per product and directing technician setup."
+            ],
+            "test": [
+              "Coordinated DOE test scheduling and execution on GUZIK head testers for close to six years, working from test requests submitted by process engineering teams.",
+              "Planned technician-led conversions of GUZIK testers between products and directed technician setup and spare-parts preparation ahead of each test run.",
+              "Supported day-to-day test-floor coordination across a multi-technician team, building broad familiarity with test-equipment operation and scheduling across product lines."
+            ],
+            "fa": [
+              "Planned DOE test execution on GUZIK head testers, converting testers per product and directing technician setup.",
+              "Coordinated with equipment teams to keep testers calibrated and available."
+            ],
+            "pm": [
+              "Managed testing and validation activities supporting new product introductions and engineering change initiatives.",
+              "Designed test strategies incorporating Design of Experiments (DOE) methodology, monitored project progress, and ensured compliance with quality and reliability requirements.",
+              "Improved reporting processes and engineering dashboards, enabling faster decision-making and enhanced project visibility.",
+              "Coordinated with engineering, operations, and equipment teams to ensure successful implementation and system readiness."
+            ]
+          }
+        },
+        {
+          "area": { "core": "Advanced System Failure Analysis", "pm": "Reliability & Quality Analysis" },
+          "period": "Oct 2010 – May 2013",
+          "bullets": {
+            "core": [
+              "Performed failure analysis on reliability-test failures (oscilloscope signal capture, drive bring-up, error duplication).",
+              "Developed corrective actions for recurring failure modes with R&D, quality and manufacturing."
+            ],
+            "fa": [
+              "Performed FA on drives that failed reliability tests (oscilloscope capture, drive bring-up, error duplication).",
+              "Assessed reliability data to identify root causes; later used automated FA tooling that shortened analysis time.",
+              "Developed corrective actions for recurring failure modes with R&D, quality and manufacturing."
+            ],
+            "pm": [
+              "Led root cause investigations for complex product issues, coordinating cross-functional teams to identify corrective actions.",
+              "Implemented process improvements that enhanced product reliability and operational performance.",
+              "Collaborated with R&D and manufacturing teams to deliver sustainable technical solutions supporting business objectives."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "earlierCareer": [
+    { "title": "Onsite IT Support Engineer", "org": "HP / Black & Veatch (Outsourced)", "location": "Bangkok", "period": "2008 – 2010" },
+    { "title": "Technical Support Engineer", "org": "T. Solution", "location": "Bangkok", "period": "2007 – 2008" },
+    { "title": "IT Support Engineer", "org": "Sabina Fareast", "location": "Bangkok", "period": "2005 – 2006" }
+  ],
+  "education": [
+    { "degree": "Bachelor of Engineering (Computer Engineering)", "school": "Kasetsart University Sriracha", "year": "2005" }
+  ]
+}
