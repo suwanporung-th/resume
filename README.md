@@ -34,12 +34,12 @@ bullet และชื่อส่วนงานเก็บแยกเป็�
 ```bash
 npm run build      # สร้าง dist/
 npm run preview    # สร้างแล้วเปิดดูที่ http://localhost:4321
-npm run deploy:cf  # deploy ขึ้น Cloudflare Pages ด้วย wrangler
+npm run deploy:cf  # deploy ขึ้น Cloudflare Worker ด้วยมือ (ปกติ push แล้ว deploy เอง)
 ```
 
 ## Deploy
 
 - **GitHub Pages** — push เข้า `main` แล้ว `.github/workflows/pages.yml` จะ build และ deploy ให้เอง
   (ครั้งแรกต้องตั้ง Settings → Pages → Source = GitHub Actions)
-- **Cloudflare Pages** — เชื่อม repo เดียวกันใน dashboard: build command `node build.mjs`, output `dist`
-  โดเมน: `resume.songvijit.com`
+- **Cloudflare Worker** (`peerapat-resume`) — เชื่อม repo เดียวกันผ่าน Workers Builds push เข้า `main` แล้ว deploy เอง
+  การตั้งค่าทั้งหมด (build command, โฟลเดอร์ `dist`, โดเมน `resume.songvijit.com`) อยู่ใน `wrangler.jsonc`

@@ -1,0 +1,10 @@
+// ตั้งค่า Cloudflare Worker (static assets) — Workers Builds จะรัน `npx wrangler deploy` ทุกครั้งที่ push เข้า main
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "peerapat-resume",
+  "compatibility_date": "2026-09-30",
+  // build หน้าเว็บก่อน deploy
+  "build": { "command": "node build.mjs" },
+  "assets": { "directory": "./dist" },
+  "routes": [{ "pattern": "resume.songvijit.com", "custom_domain": true }]
+}
