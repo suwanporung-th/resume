@@ -62,9 +62,10 @@ function renderContact(p, onlineUrl) {
       </ul>`;
 }
 
-// แสดงเฉพาะตอนพิมพ์ / Save as PDF: QR code ไปยังหน้าเว็บของเวอร์ชันนี้ คนถือกระดาษสแกนกลับมาดูออนไลน์ได้
+// แสดงเฉพาะตอนพิมพ์: QR code ไปยัง portfolio demo ซึ่งเป็นสิ่งเดียวที่กระดาษแสดงแทนไม่ได้
+// (ไม่ใส่ QR ของ resume เอง เพราะซ้ำกับเนื้อหาบนกระดาษ)
 function renderQr(url) {
-  return `<a class="qr print-only" href="${esc(url)}">${qrSvg(url, { label: esc(url) })}<span>Scan for online version</span></a>`;
+  return `<a class="qr print-only" href="${esc(url)}">${qrSvg(url, { label: esc(url) })}<span>Scan for live demo</span></a>`;
 }
 
 // หน้ารวม: การ์ดของทุกเวอร์ชัน กดเข้าไปดู resume เต็มของตำแหน่งนั้น
@@ -141,11 +142,14 @@ function renderPage(v, base) {
     <section>
       <h2>Portfolio Project</h2>
       <div class="portfolio">
-        <div class="role-head">
-          <h4>${esc(data.portfolio.name)}</h4>
-          <a class="period" href="${esc(data.portfolio.url)}" target="_blank" rel="noopener">${esc(data.portfolio.urlLabel)} ↗</a>
+        <div class="portfolio-text">
+          <div class="role-head">
+            <h4>${esc(data.portfolio.name)}</h4>
+            <a class="period" href="${esc(data.portfolio.url)}" target="_blank" rel="noopener">${esc(data.portfolio.urlLabel)} ↗</a>
+          </div>
+          <p>${esc(portfolioDesc)}</p>
         </div>
-        <p>${esc(portfolioDesc)}</p>
+        ${renderQr(data.portfolio.url)}
       </div>
     </section>`
       : "";
@@ -158,12 +162,9 @@ function renderPage(v, base) {
   </div>
   <main class="sheet">
     <header class="top">
-      <div class="top-text">
-        <h1>${esc(p.name)}</h1>
-        <p class="headline">${esc(v.headline)}</p>
-        ${renderContact(p, onlineUrl)}
-      </div>
-      ${onlineUrl ? renderQr(onlineUrl) : ""}
+      <h1>${esc(p.name)}</h1>
+      <p class="headline">${esc(v.headline)}</p>
+      ${renderContact(p, onlineUrl)}
     </header>
 
     <section>

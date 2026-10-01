@@ -76,15 +76,14 @@ a:hover { text-decoration: underline; }
 .top { border-bottom: 2px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
 h1 { margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
 .headline { margin: 2px 0 10px; font-size: 17px; font-weight: 500; color: var(--accent); }
-.top:has(.qr) { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 .contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: 14px; }
 
 section { margin-top: 22px; }
 
-/* ลิงก์ออนไลน์ + QR code โชว์เฉพาะตอนพิมพ์ */
+/* ลิงก์ออนไลน์ (หัวกระดาษ) + QR ของ portfolio โชว์เฉพาะตอนพิมพ์ */
 .print-only { display: none; }
 .qr { flex: none; flex-direction: column; align-items: center; gap: 2pt; color: var(--muted); font-size: 7pt; text-decoration: none; }
-.qr svg { display: block; width: 22mm; height: 22mm; }
+.qr svg { display: block; width: 15mm; height: 15mm; }
 h2 {
   margin: 0 0 10px;
   font-size: 12px;
@@ -108,6 +107,8 @@ section > p { margin: 0; }
 .role ul { margin: 4px 0 0; padding-left: 18px; }
 .role li { margin: 2px 0; }
 .portfolio p { margin: 4px 0 0; }
+.portfolio:has(.qr) { display: flex; align-items: flex-start; gap: 14px; }
+.portfolio-text { flex: 1; }
 
 .plain { list-style: none; margin: 0; padding: 0; }
 .plain li { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 3px 0; }

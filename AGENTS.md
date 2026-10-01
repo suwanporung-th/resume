@@ -23,7 +23,8 @@
 - Source PDFs live in the user's Google Drive folder `17HIqcu52sciiKFoT-swCxlsWcd568Jf3`; the `pm` set comes from the older generic "ProcessEngineering" PDF.
 - Asset paths are relative (`./`, `../`) so the same `dist/` works on the GitHub Pages project site (`/resume/`) and the Cloudflare Worker (`/`).
 - Every page carries `noindex`: the user shares links only with people involved in a job application. Variant pages do not link back to the hub; `showSwitcher` (default `false`) adds cross-links.
-- Variant pages show `<siteUrl>/<slug>/` as a link and QR code only in print (`.print-only`), so a saved PDF points back to its own online version. Verify QR changes by decoding them (e.g. `BarcodeDetector` in the preview browser).
+- Print-only (`.print-only`): variant pages show `<siteUrl>/<slug>/` as a text link in the header, and a QR code to `portfolio.url` beside the Portfolio Project. Do not add a QR to the resume itself; it duplicates the paper.
+- Every variant must print to at most 2 A4 pages; check with headless Chrome `--print-to-pdf` after content or print-style changes. Verify QR changes by decoding them (e.g. `BarcodeDetector` in the preview browser).
 - Resume content and page UI are English (audience is employers); README and code comments are Thai.
 
 ## Work Guidance
