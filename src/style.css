@@ -76,9 +76,15 @@ a:hover { text-decoration: underline; }
 .top { border-bottom: 2px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
 h1 { margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
 .headline { margin: 2px 0 10px; font-size: 17px; font-weight: 500; color: var(--accent); }
+.top:has(.qr) { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 .contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: 14px; }
 
 section { margin-top: 22px; }
+
+/* ลิงก์ออนไลน์ + QR code โชว์เฉพาะตอนพิมพ์ */
+.print-only { display: none; }
+.qr { flex: none; flex-direction: column; align-items: center; gap: 2pt; color: var(--muted); font-size: 7pt; text-decoration: none; }
+.qr svg { display: block; width: 22mm; height: 22mm; }
 h2 {
   margin: 0 0 10px;
   font-size: 12px;
@@ -123,6 +129,9 @@ section > p { margin: 0; }
   }
   body { font-size: 10.5pt; background: #fff; }
   .toolbar { display: none; }
+  li.print-only { display: list-item; }
+  .qr.print-only { display: flex; }
+  .qr svg { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .sheet { max-width: none; margin: 0; padding: 0; box-shadow: none; border-radius: 0; }
   h1 { font-size: 20pt; }
   section { margin-top: 12pt; }

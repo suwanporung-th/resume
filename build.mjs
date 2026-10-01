@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { qrSvg } from "./src/qr.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const out = join(root, "dist");
@@ -49,12 +50,21 @@ function renderHead(title, description, base) {
 </head>`;
 }
 
-function renderContact(p) {
+function renderContact(p, onlineUrl) {
+  const online = onlineUrl
+    ? `
+        <li class="print-only"><a href="${esc(onlineUrl)}">${esc(onlineUrl.replace(/^https?:\/\//, ""))}</a></li>`
+    : "";
   return `<ul class="contact">
         <li>${esc(p.location)}</li>
         <li><a href="mailto:${esc(p.email)}">${esc(p.email)}</a></li>
-        <li><a href="tel:${esc(p.phoneIntl)}">${esc(p.phone)}</a></li>
+        <li><a href="tel:${esc(p.phoneIntl)}">${esc(p.phone)}</a></li>${online}
       </ul>`;
+}
+
+// แสดงเฉพาะตอนพิมพ์ / Save as PDF: QR code ไปยังหน้าเว็บของเวอร์ชันนี้ คนถือกระดาษสแกนกลับมาดูออนไลน์ได้
+function renderQr(url) {
+  return `<a class="qr print-only" href="${esc(url)}">${qrSvg(url, { label: esc(url) })}<span>Scan for online version</span></a>`;
 }
 
 // หน้ารวม: การ์ดของทุกเวอร์ชัน กดเข้าไปดู resume เต็มของตำแหน่งนั้น
@@ -96,6 +106,7 @@ function renderPage(v, base) {
   const p = data.profile;
   const sets = v.sets;
   const portfolioDesc = pick(data.portfolio.description, sets);
+  const onlineUrl = data.siteUrl ? `${data.siteUrl.replace(/\/$/, "")}/${v.slug}/` : "";
 
   const experience = data.experience
     .map((job) => {
@@ -147,9 +158,12 @@ function renderPage(v, base) {
   </div>
   <main class="sheet">
     <header class="top">
-      <h1>${esc(p.name)}</h1>
-      <p class="headline">${esc(v.headline)}</p>
-      ${renderContact(p)}
+      <div class="top-text">
+        <h1>${esc(p.name)}</h1>
+        <p class="headline">${esc(v.headline)}</p>
+        ${renderContact(p, onlineUrl)}
+      </div>
+      ${onlineUrl ? renderQr(onlineUrl) : ""}
     </header>
 
     <section>
