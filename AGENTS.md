@@ -24,7 +24,7 @@
 - Asset paths are relative (`./`, `../`) so the same `dist/` works on the GitHub Pages project site (`/resume/`) and the Cloudflare Worker (`/`).
 - Every page carries `noindex`: the user shares links only with people involved in a job application. Variant pages do not link back to the hub; `showSwitcher` (default `false`) adds cross-links.
 - Print-only (`.print-only`): variant pages show `<siteUrl>/<slug>/` as a text link in the header, and a QR code to `portfolio.url` beside the Portfolio Project. Do not add a QR to the resume itself; it duplicates the paper.
-- Every variant must print to at most 2 A4 pages; check with headless Chrome `--print-to-pdf` after content or print-style changes. Verify QR changes by decoding them (e.g. `BarcodeDetector` in the preview browser).
+- Every variant must print to exactly 1 A4 page (matching the original PDFs in Drive); check with headless Chrome `--print-to-pdf` after content or print-style changes. `senior-test-engineer` is the tightest (about 20 mm spare), so test it first. Verify QR changes by decoding them (e.g. `BarcodeDetector` in the preview browser).
 - Resume content and page UI are English (audience is employers); README and code comments are Thai.
 
 ## Work Guidance

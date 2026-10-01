@@ -121,24 +121,49 @@ section > p { margin: 0; }
   .role { padding-left: 10px; }
 }
 
-/* พิมพ์ / บันทึกเป็น PDF: A4 ขาวดำอ่านง่าย ไม่มีปุ่ม */
+/* พิมพ์ / บันทึกเป็น PDF: A4 หน้าเดียว ความแน่นใกล้เคียง resume PDF ฉบับเดิม ไม่มีปุ่ม */
 @media print {
-  @page { size: A4; margin: 14mm 14mm; }
+  @page { size: A4; margin: 9mm 12mm; }
   :root {
     --paper: #fff; --bg: #fff; --ink: #111; --muted: #444;
     --line: #ccc; --accent: #0f5c73; --accent-soft: #eef4f6;
   }
-  body { font-size: 10.5pt; background: #fff; }
+  body { font-size: 9pt; line-height: 1.25; background: #fff; }
   .toolbar { display: none; }
   li.print-only { display: list-item; }
   .qr.print-only { display: flex; }
   .qr svg { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .sheet { max-width: none; margin: 0; padding: 0; box-shadow: none; border-radius: 0; }
-  h1 { font-size: 20pt; }
-  section { margin-top: 12pt; }
+
+  .top { padding-bottom: 5pt; margin-bottom: 0; border-bottom-width: 1.5pt; }
+  h1 { font-size: 15pt; }
+  .headline { font-size: 10.5pt; margin: 0 0 2pt; }
+  .contact { font-size: 8pt; gap: 0 10pt; }
+
+  section { margin-top: 6pt; }
+  h2 { font-size: 8pt; margin-bottom: 3pt; }
+
+  /* competencies เป็นข้อความต่อกันคั่นด้วย • แทนกล่อง */
+  .chips { display: block; }
+  .chips li { display: inline; background: none; padding: 0; border-radius: 0; font-size: inherit; }
+  .chips li + li::before { content: " • "; color: var(--muted); }
+
+  .portfolio:has(.qr) { gap: 10pt; }
+  .qr svg { width: 14mm; height: 14mm; }
+  .qr { font-size: 6pt; }
+
+  .job + .job { margin-top: 4pt; }
+  .job-head h3 { font-size: 10pt; }
+  .job-head .org { font-size: 8.5pt; margin: 0 0 1pt; }
+  .role { margin-top: 2pt; padding-left: 8pt; border-left-width: 1.5pt; }
+  .role-head h4 { font-size: 9pt; }
+  .period { font-size: 8.5pt; }
+  .role ul { margin-top: 1pt; padding-left: 13pt; }
+  .role li { margin: 0; }
+  .plain li { padding: 0; }
+
   .role, .plain li { break-inside: avoid; }
   .job-head { break-after: avoid; }
-  .chips li { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* หน้ารวม */

@@ -140,9 +140,9 @@
               "Traced build cycle-time overruns to root causes and agreed fixes with production and IE."
             ],
             "pm": [
-              "Led end-to-end planning and execution of 62 concurrent engineering projects, coordinating cross-functional teams to deliver project milestones on schedule.",
-              "Developed integrated project schedules, monitored KPIs, managed risks, and resolved bottlenecks, reducing critical project cycle time by 10%.",
-              "Prepared executive project status reports, risk registers, and mitigation plans, providing timely updates to senior stakeholders."
+              "Led end-to-end planning and delivery of 62 concurrent engineering projects, keeping cross-functional teams on schedule.",
+              "Built integrated schedules, tracked KPIs and resolved bottlenecks, reducing critical project cycle time by 10%.",
+              "Prepared executive status reports, risk registers and mitigation plans for senior stakeholders."
             ]
           }
         },
@@ -163,10 +163,10 @@
               "Presented experiment findings to engineering leadership to guide next steps."
             ],
             "pm": [
-              "Managed cross-functional development projects from planning through implementation, coordinating technical teams, project schedules, deliverables, and stakeholder communications.",
-              "Managed a US$12K monthly operational budget, improving forecasting, procurement planning, and inventory management to support uninterrupted project execution.",
-              "Delivered data-driven presentations and recommendations to senior management, enabling informed business and technical decisions.",
-              "Led continuous improvement initiatives through root cause analysis and process optimization, improving operational performance and project outcomes.",
+              "Managed cross-functional development projects from planning to implementation, including schedules and deliverables.",
+              "Managed a US$12K monthly operational budget, improving forecasting, procurement and inventory planning.",
+              "Presented data-driven recommendations to senior management to guide business and technical decisions.",
+              "Led continuous improvement through root cause analysis and process optimization, improving operational performance.",
               "Mentored engineers, developed standard operating procedures, and improved knowledge transfer across project teams."
             ]
           }
@@ -186,9 +186,9 @@
               "Ran qualification builds and tests on roughly 10 new-process projects, feeding results to process owners."
             ],
             "pm": [
-              "Managed validation projects for new manufacturing processes from planning through deployment, ensuring compliance with quality, operational, and business requirements.",
-              "Successfully delivered 10+ engineering implementation projects on schedule through proactive risk management and cross-functional collaboration.",
-              "Improved manufacturing performance by validating new process configurations and implementing data-driven process improvements."
+              "Managed new-process validation projects from planning to deployment, meeting quality and operational requirements.",
+              "Delivered 10+ engineering implementation projects on schedule through proactive risk management.",
+              "Improved manufacturing performance by validating new process configurations and data-driven improvements."
             ]
           }
         }
@@ -217,10 +217,10 @@
               "Supervised 20+ personnel: shift planning, leave and overtime approval, Kaizen activities."
             ],
             "pm": [
-              "Led day-to-day operations across two critical manufacturing facilities, managing workforce planning, operational performance, and compliance.",
+              "Led day-to-day operations across two critical manufacturing facilities, covering workforce planning and compliance.",
               "Supervised a team of 20+ personnel, coordinating priorities, workload distribution, and continuous improvement initiatives.",
-              "Managed two large-scale operational shutdown and restart projects, delivering all milestones on schedule with zero operational disruption.",
-              "Monitored post-implementation performance of new production lines, coordinating issue resolution and continuous improvement activities."
+              "Managed two large-scale shutdown and restart projects, meeting all milestones with zero operational disruption.",
+              "Monitored post-implementation performance of new production lines and coordinated issue resolution."
             ]
           }
         },
@@ -242,7 +242,7 @@
             ],
             "pm": [
               "Managed testing and validation activities supporting new product introductions and engineering change initiatives.",
-              "Designed test strategies incorporating Design of Experiments (DOE) methodology, monitored project progress, and ensured compliance with quality and reliability requirements.",
+              "Designed DOE-based test strategies and ensured compliance with quality and reliability requirements.",
               "Improved reporting processes and engineering dashboards, enabling faster decision-making and enhanced project visibility."
             ]
           }
